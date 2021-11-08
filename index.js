@@ -61,7 +61,7 @@ function ewokHelper(string) {
   if (typeof string !== "string") {
     return string;
   }
-  const withoutVowels = string.split(/[aeiou]/).join("i");
+  const withoutVowels = string.split(/[aeiou]/i).join("i");
   const withoutConsonants = withoutVowels
     .split(/[bcdfghjklmnpqrstvwxyz]/i)
     .join("b");
